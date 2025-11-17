@@ -34,8 +34,8 @@ This project uses a multi-container Docker setup with the following services:
 ###  Setting up the project
 
 ```bash
-1️⃣ git clone <repository-url>
-cd <project-directory>
+1️⃣ git clone https://github.com/anuragdas2001/CN_TA.git
+cd CN_TA
 2️⃣ Start the Application
 3️⃣ docker compose up --build
   
