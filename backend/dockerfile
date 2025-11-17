@@ -1,0 +1,21 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package.json files
+COPY package*.json ./
+
+# Install ALL deps (prod + dev for tsc)
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Build TypeScript to dist/
+RUN npm run build
+
+# Expose backend port
+EXPOSE 5000
+
+# Run compiled JS output
+CMD ["npm", "start"]
