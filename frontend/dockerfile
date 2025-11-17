@@ -1,0 +1,18 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+# Build the frontend
+RUN npm run build
+
+# Expose the preview server port (default 4173)
+EXPOSE 4173
+
+# Run the preview server
+CMD ["npm", "run", "preview"]
