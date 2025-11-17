@@ -212,11 +212,11 @@ const CustomerDashboard = () => {
                     <p className="text-xs text-gray-500">
                       Applied on {new Date(loan.createdAt).toLocaleDateString()}
                     </p>
-                    <Link to={`/loans/${loan._id}`}>
+                    {/* <Link to={`/loans/${loan._id}`}>
                       <Button variant="outline" size="sm">
                         View Details
                       </Button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               ))}

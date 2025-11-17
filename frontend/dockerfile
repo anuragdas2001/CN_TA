@@ -15,4 +15,5 @@ RUN npm run build
 EXPOSE 4173
 
 # Run the preview server
-CMD ["npm", "run", "preview"]
+CMD ["npx", "vite", "preview", "--host"]
+

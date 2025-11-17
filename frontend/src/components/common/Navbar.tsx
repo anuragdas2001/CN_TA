@@ -71,7 +71,7 @@ const Navbar = () => {
 
               {user.role === UserRole.OFFICER && (
                 <>
-                  <Link to="/officer/dashboard">
+                  <Link to={`/officer/dashboard/${user?._id}`}>
                     <Button
                       variant="ghost"
                       className="flex items-center space-x-2"
@@ -80,7 +80,7 @@ const Navbar = () => {
                       <span>Dashboard</span>
                     </Button>
                   </Link>
-                  <Link to="/officer/profile">
+                  {/* <Link to="/officer/profile">
                     <Button
                       variant="ghost"
                       className="flex items-center space-x-2"
@@ -88,7 +88,7 @@ const Navbar = () => {
                       <UserCircle className="h-4 w-4" />
                       <span>Profile</span>
                     </Button>
-                  </Link>
+                  </Link> */}
                 </>
               )}
             </div>
