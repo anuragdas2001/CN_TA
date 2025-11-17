@@ -323,7 +323,7 @@ const CustomerProfile = () => {
 
                 {/* Submit Button */}
                 <div className="flex space-x-3">
-                  <Button type="submit" disabled={isSaving} className="flex-1">
+                  <Button variant="outline" type="submit" disabled={isSaving} className="flex-1">
                     <Save className="h-4 w-4 mr-2" />
                     {isSaving ? "Saving..." : "Save Changes"}
                   </Button>
